@@ -1,0 +1,14 @@
+# 拒绝默认加入素材、草稿、工具配置和本地私有文件。
+/*
+!/.gitignore
+!/README.md
+!/index.html
+!/learning.html
+!/projects.html
+!/blog.html
+!/life.html
+!/styles.css
+!/navigation.js
+!/home.js
+!/hero-mark.js
+!/learning.js

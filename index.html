@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="mypage，收录学习笔记、项目、文章和生活随记的个人网站。">
+  <title>mypage · 个人主页</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="home-page">
+  <div class="scroll-progress" aria-hidden="true" hidden></div>
+  <a class="skip" href="#main">跳到正文</a>
+  <header class="shell header" id="top">
+    <a class="brand" href="#top"><span aria-hidden="true"></span>mypage</a>
+    <nav aria-label="主导航">
+      <a href="#about">关于</a><details class="nav-menu"><summary>学习</summary><div class="nav-options"><a href="learning.html">学习总览</a><a href="learning.html#entry-1">学习笔记</a><a href="learning.html#entry-2">阶段复盘</a></div></details><details class="nav-menu"><summary>项目</summary><div class="nav-options"><a href="projects.html">项目总览</a><a href="projects.html#entry-1">mypage</a><a href="projects.html#entry-2">项目记录</a></div></details><details class="nav-menu"><summary>博客</summary><div class="nav-options"><a href="blog.html">博客总览</a><a href="blog.html#entry-1">写作计划</a><a href="blog.html#entry-2">文章归档</a></div></details><details class="nav-menu"><summary>生活</summary><div class="nav-options"><a href="life.html">生活总览</a><a href="life.html#entry-1">阅读随记</a><a href="life.html#entry-2">日常片段</a></div></details>
+    </nav>
+  </header>
+  <main class="shell" id="main">
+    <section class="hero" aria-labelledby="title">
+      <div class="hero-copy">
+        <p class="eyebrow">个人主页</p>
+        <h1 id="title">正在学习，<br><em>也在创造。</em></h1>
+        <p class="intro">你好，欢迎来到 mypage。这里会收录我的学习笔记、动手做的项目，以及一些值得记下的日常。</p>
+      </div>
+      <div class="hero-mark" aria-hidden="true">
+        <div class="hero-mark-float">
+          <svg class="hero-orbits" viewBox="0 0 480 380">
+            <defs>
+              <radialGradient id="orbit-halo">
+                <stop stop-color="#5f8b69" stop-opacity=".48"/>
+                <stop offset=".58" stop-color="#416b50" stop-opacity=".24"/>
+                <stop offset="1" stop-color="#244b39" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <ellipse class="orbit-halo" cx="240" cy="190" rx="239" ry="188" fill="url(#orbit-halo)"/>
+            <g class="orbit-lines" fill="none" stroke="#c0d2a8">
+              <ellipse cx="240" cy="190" rx="208" ry="88" transform="rotate(-34 240 190)" opacity=".62"/>
+              <ellipse cx="240" cy="190" rx="208" ry="88" transform="rotate(34 240 190)" opacity=".52"/>
+              <ellipse cx="240" cy="190" rx="214" ry="75" opacity=".23"/>
+            </g>
+            <g fill="#d9e8a6" class="orbit-balls">
+              <g transform="rotate(-34 240 190)"><circle class="orbit-ball orbit-ball-one" cx="448" cy="190" r="7"/></g>
+              <g transform="rotate(34 240 190)"><circle class="orbit-ball orbit-ball-two" cx="32" cy="190" r="5"/></g>
+              <circle class="orbit-ball orbit-ball-three" cx="240" cy="265" r="3"/>
+            </g>
+            <text class="orbit-word" x="240" y="219" text-anchor="middle">my page<tspan fill="#d9e8a6">.</tspan></text>
+          </svg>
+        </div>
+      </div>
+      <a class="hero-next" href="#about"><span class="hero-next-label">向下浏览</span><span class="hero-next-arrow" aria-hidden="true"></span></a>
+    </section>
+    <div class="home-content">
+    <section class="about" id="about" aria-labelledby="about-title" tabindex="-1">
+      <div class="about-copy">
+        <p class="about-kicker">02 / ABOUT ME</p>
+        <h2 id="about-title">关于我</h2>
+        <p class="about-intro">保持好奇，持续探索。在学习与创造中，逐渐找到属于自己的方向。</p>
+        <div class="identity-card">
+          <div class="identity-heading">
+            <svg class="identity-avatar" viewBox="0 0 56 56" aria-hidden="true">
+              <circle cx="28" cy="21" r="6"/>
+              <path d="M16 40a12 12 0 0 1 24 0Z"/>
+            </svg>
+            <div><h3>Hello, World.</h3><p>学习者 · 探索者 · 创造者</p></div>
+          </div>
+          <dl><div><dt>当前阶段</dt><dd>大学 · 探索中</dd></div><div><dt>关注方向</dt><dd>人工智能与工程</dd></div></dl>
+        </div>
+      </div>
+      <div class="interest-map" role="group" aria-labelledby="interest-title">
+        <div class="interest-heading"><h3 id="interest-title">我的兴趣宇宙</h3><span>INTEREST MAP</span></div>
+        <svg class="interest-graph" viewBox="0 -12 320 272" role="group" aria-labelledby="interest-title">
+          <circle class="interest-orbit outer" cx="160" cy="130" r="101"/>
+          <circle class="interest-orbit inner" cx="160" cy="130" r="67"/>
+          <line data-interest-line="0" class="interest-line is-active" x1="160" y1="130" x2="160" y2="29"/>
+          <line data-interest-line="1" class="interest-line" x1="160" y1="130" x2="269" y2="95"/>
+          <line data-interest-line="2" class="interest-line" x1="160" y1="130" x2="228" y2="218"/>
+          <line data-interest-line="3" class="interest-line" x1="160" y1="130" x2="86" y2="218"/>
+          <line data-interest-line="4" class="interest-line" x1="160" y1="130" x2="51" y2="95"/>
+          <circle class="interest-center" cx="160" cy="130" r="40"/>
+          <text class="interest-me" x="160" y="130">me.</text>
+          <text class="interest-growth" x="160" y="148">持续生长</text>
+          <g class="interest-node" role="button" tabindex="0" aria-pressed="true" aria-controls="interest-detail" data-interest="0" transform="translate(160 29)">
+            <circle class="interest-halo" r="36"/>
+            <circle class="interest-disc" r="30"/>
+            <text y="0" dominant-baseline="central">人工智能</text>
+          </g>
+          <g class="interest-node" role="button" tabindex="0" aria-pressed="false" aria-controls="interest-detail" data-interest="1" transform="translate(269 95)">
+            <circle class="interest-halo" r="33"/>
+            <circle class="interest-disc" r="27"/>
+            <text y="0" dominant-baseline="central">计算机</text>
+          </g>
+          <g class="interest-node" role="button" tabindex="0" aria-pressed="false" aria-controls="interest-detail" data-interest="2" transform="translate(228 218)">
+            <circle class="interest-halo" r="32"/>
+            <circle class="interest-disc" r="26"/>
+            <text y="0" dominant-baseline="central">工程</text>
+          </g>
+          <g class="interest-node" role="button" tabindex="0" aria-pressed="false" aria-controls="interest-detail" data-interest="3" transform="translate(86 218)">
+            <circle class="interest-halo" r="31"/>
+            <circle class="interest-disc" r="25"/>
+            <text y="0" dominant-baseline="central">生活</text>
+          </g>
+          <g class="interest-node" role="button" tabindex="0" aria-pressed="false" aria-controls="interest-detail" data-interest="4" transform="translate(51 95)">
+            <circle class="interest-halo" r="31"/>
+            <circle class="interest-disc" r="25"/>
+            <text y="0" dominant-baseline="central">数学</text>
+          </g>
+        </svg>
+        <div class="interest-buttons" role="group" aria-label="兴趣方向">
+          <button type="button" data-interest="0" aria-pressed="true" aria-controls="interest-detail">人工智能</button>
+          <button type="button" data-interest="1" aria-pressed="false" aria-controls="interest-detail">计算机</button>
+          <button type="button" data-interest="2" aria-pressed="false" aria-controls="interest-detail">工程</button>
+          <button type="button" data-interest="3" aria-pressed="false" aria-controls="interest-detail">生活</button>
+          <button type="button" data-interest="4" aria-pressed="false" aria-controls="interest-detail">数学</button>
+        </div>
+        <div class="interest-detail" id="interest-detail" role="status" aria-atomic="true">
+          <strong>人工智能</strong>
+          <p>探索大模型、机器学习与智能系统。</p>
+        </div>
+      </div>
+      <a class="hero-next" href="#explore"><span class="hero-next-label">浏览栏目</span><span class="hero-next-arrow" aria-hidden="true"></span></a>
+    </section>
+    <section class="explore" id="explore" aria-labelledby="explore-title" tabindex="-1">
+      <p class="explore-kicker">03 / EXPLORE</p>
+      <h2 id="explore-title">探索我的世界。</h2>
+      <p class="explore-intro">学习、创造、思考，以及生活本身。</p>
+      <div class="explore-grid">
+        <a class="explore-card explore-learning" href="learning.html" data-title="学习" data-description="学习笔记、课程整理与知识探索。" data-topics="数学 · 计算机 · 人工智能">
+          <span class="explore-kicker">01 / LEARNING</span>
+          <span class="explore-arrow" aria-hidden="true">↗</span>
+          <h3>学习</h3>
+          <p>知识积累，永远保持好奇。</p>
+          <svg aria-hidden="true" viewBox="0 0 220 120">
+          <ellipse cx="110" cy="60" rx="99" ry="52" fill="none" stroke="#a8c5a4" stroke-dasharray="3 6"/>
+          <path d="M29 62L66 31L110 60L152 26L190 51L165 91L110 60L55 94L29 62M66 31L55 94M152 26L165 91M29 62H110L190 51" fill="none" stroke="#a8c5a4" opacity=".75"/>
+          <g fill="#bad4af"><circle cx="29" cy="62" r="4"/><circle cx="66" cy="31" r="6"/><circle cx="152" cy="26" r="5"/><circle cx="190" cy="51" r="4"/><circle cx="165" cy="91" r="6"/><circle cx="55" cy="94" r="5"/></g>
+          <circle cx="110" cy="60" r="13" fill="#dceba8"/>
+        </svg>
+          <small>数学 / 计算机 / 人工智能</small>
+        </a>
+        <a class="explore-card explore-projects" href="projects.html" data-title="项目" data-description="个人作品、开发日志与技术实验。" data-topics="mypage · 编程 · AI">
+          <span class="explore-kicker">02 / PROJECTS</span>
+          <span class="explore-arrow" aria-hidden="true">↗</span>
+          <h3>项目</h3>
+          <p>把想法变成现实。</p>
+          <div class="explore-terminal"><span aria-hidden="true">● ● ●</span><code>~/mypage<br>&gt; hello, world.<br>&gt; building_</code></div>
+        </a>
+        <a class="explore-card explore-blog" href="blog.html" data-title="博客" data-description="技术文章、个人思考与长文记录。" data-topics="技术 · 思考 · 随笔">
+          <span class="explore-kicker">03 / BLOG</span>
+          <span class="explore-arrow" aria-hidden="true">↗</span>
+          <h3>博客</h3>
+          <p>让思考留下痕迹。</p>
+          <svg aria-hidden="true" viewBox="0 0 160 85" width="100%" xmlns="http://www.w3.org/2000/svg"><rect x="48" y="9" width="68" height="65" rx="3" fill="#d3d9c5" transform="rotate(-10 82 42)" /><g transform="rotate(8 82 42)"><rect x="48" y="6" width="68" height="65" rx="3" fill="#f8f5e9" stroke="#b9c3ae" /><path d="M59 19 H101 M59 29 H105 M59 38 H96 M59 47 H103 M59 56 H85" stroke="#8b9c88" stroke-width="1.5" stroke-linecap="round" /></g></svg>
+        </a>
+        <a class="explore-card explore-life" href="life.html" data-title="生活" data-description="摄影、日常与值得记住的时刻。" data-topics="摄影 · 日常 · 随记">
+          <span class="explore-kicker">04 / LIFE</span>
+          <span class="explore-arrow" aria-hidden="true">↗</span>
+          <h3>生活</h3>
+          <p>收藏平凡日子里的闪光。</p>
+          <svg aria-hidden="true" viewBox="0 0 240 85" width="100%" xmlns="http://www.w3.org/2000/svg"><rect x="67" y="5" width="68" height="72" rx="2" fill="#f4f1e5" transform="rotate(-13 101 41)" /><g transform="rotate(9 146 42)"><rect x="108" y="4" width="75" height="77" rx="2" fill="#faf7eb" /><rect x="114" y="10" width="63" height="57" fill="#a7c2ac" /><circle cx="160" cy="24" r="8" fill="#e9e6ac" /><path d="M114 57 L134 29 L149 49 L162 37 L177 56 V67 H114Z" fill="#739b7b" /><path d="M114 60 Q140 46 177 61 V67 H114Z" fill="#3f6a51" /></g></svg>
+        </a>
+      </div>
+      <div class="explore-detail" role="status" aria-atomic="true">
+        <strong>学习</strong>
+        <p>学习笔记、课程整理与知识探索。</p>
+        <small>数学 · 计算机 · 人工智能</small>
+      </div>
+    </section>
+    </div>
+  </main>
+  <footer class="shell footer"><span>© 2026 mypage. — Still growing.</span><a href="#top">回到顶部</a></footer>
+  <script src="navigation.js" defer></script>
+  <script src="home.js" defer></script>
+  <script src="hero-mark.js" defer></script>
+</body>
+</html>

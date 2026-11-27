@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="整理知识、练习和复盘。">
+  <title>知识花园 · Knowledge Garden | mypage</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="learning.js" defer></script>
+</head>
+<body class="garden-page">
+  <a class="skip" href="#main">跳到正文</a>
+  <header class="shell header" id="top">
+    <a class="brand" href="index.html"><span aria-hidden="true"></span>mypage</a>
+    <nav aria-label="主导航"><a href="index.html#about">关于</a><a href="learning.html" aria-current="page">学习</a><a href="projects.html">项目</a><a href="blog.html">博客</a><a href="life.html">生活</a></nav>
+  </header>
+  <main class="shell garden" id="main">
+    <section class="garden-hero" aria-labelledby="title">
+      <div>
+        <p class="garden-kicker">01 / LEARNING</p>
+        <h1 id="title">知识花园。</h1>
+        <p class="garden-motto" lang="en">Learning is a lifelong journey.</p>
+        <p>把零散的知识连接起来，让每一次学习都有迹可循。</p>
+      </div>
+      <svg class="garden-growth" viewBox="0 0 360 250" aria-hidden="true">
+        <g fill="none" stroke="#dceba8">
+          <ellipse cx="182" cy="113" rx="155" ry="78" transform="rotate(-17 182 113)" opacity=".42" stroke-dasharray="4 7"/>
+          <ellipse cx="182" cy="113" rx="135" ry="82" transform="rotate(22 182 113)" opacity=".3" stroke-dasharray="4 7"/>
+          <path stroke-width="2" d="M104 207C166 181 196 149 192 115S210 53 261 38M154 180Q137 141 79 137M181 152Q225 155 280 111M192 115Q166 76 132 64M213 62Q206 43 211 23"/>
+        </g>
+        <g fill="#dceba8">
+          <circle cx="79" cy="137" r="6"/><circle cx="280" cy="111" r="7"/><circle cx="132" cy="64" r="5"/><circle cx="211" cy="23" r="4"/><circle cx="261" cy="38" r="8"/><circle cx="192" cy="115" r="5"/><circle cx="104" cy="207" r="4"/>
+          <text x="214" y="222" font-size="11" letter-spacing="2">KEEP GROWING</text>
+        </g>
+      </svg>
+    </section>
+    <section class="garden-domains" aria-label="学习领域">
+      <a class="garden-domain" href="#entry-1" data-domain="math">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><text x="4" y="20" fill="currentColor" stroke="none" font-size="24">Σ</text></svg>
+        <span class="garden-arrow" aria-hidden="true">↗</span>
+        <strong>数学</strong><span>高等数学 · 线性代数</span>
+      </a>
+      <a class="garden-domain" href="#entry-1" data-domain="cs">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 6-6 6 6 6m8-12 6 6-6 6m-2-15-4 18"/></svg>
+        <span class="garden-arrow" aria-hidden="true">↗</span>
+        <strong>计算机</strong><span>编程 · 数据结构</span>
+      </a>
+      <a class="garden-domain" href="#entry-1" data-domain="ai">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5a3 3 0 0 0-6-1 4 4 0 0 0-3 6 4 4 0 0 0 1 7 4 4 0 0 0 8 1V5a3 3 0 0 1 6-1 4 4 0 0 1 3 6 4 4 0 0 1-1 7 4 4 0 0 1-8 1M6 8l2 2m10-2-2 2M5 15l3-1m11 1-3-1"/></svg>
+        <span class="garden-arrow" aria-hidden="true">↗</span>
+        <strong>人工智能</strong><span>机器学习 · 大模型</span>
+      </a>
+      <a class="garden-domain" href="#entry-1" data-domain="eng">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 2-1 3-3 1-3 4 2 2-1 4 3 3 3-1 2 4h3l2-4 3 1 3-3-1-4 1-2-3-4-3-1-1-3z"/><circle cx="12" cy="12" r="3"/></svg>
+        <span class="garden-arrow" aria-hidden="true">↗</span>
+        <strong>工程</strong><span>专业课程 · 工程实践</span>
+      </a>
+    </section>
+    <nav class="garden-views" aria-label="学习视图">
+      <a href="#entry-1" aria-current="location">学习笔记</a>
+      <a href="#entry-2">阶段复盘</a>
+    </nav>
+    <div id="entry-1" class="garden-library" tabindex="-1">
+      <aside class="garden-filters" aria-labelledby="garden-filter-title">
+        <h2 id="garden-filter-title">按领域浏览</h2>
+        <div class="garden-filter-buttons">
+          <button type="button" data-filter="all" aria-pressed="true">全部</button>
+          <button type="button" data-filter="math" aria-pressed="false">数学</button>
+          <button type="button" data-filter="cs" aria-pressed="false">计算机</button>
+          <button type="button" data-filter="ai" aria-pressed="false">人工智能</button>
+          <button type="button" data-filter="eng" aria-pressed="false">工程</button>
+        </div>
+      </aside>
+      <section class="garden-results" aria-labelledby="garden-notes-title">
+        <h2 id="garden-notes-title">学习笔记</h2>
+        <label for="garden-search">搜索笔记</label>
+        <input type="search" id="garden-search" placeholder="标题、标签或关键词">
+        <div class="garden-result-bar">
+          <p id="garden-count" role="status">5 篇笔记</p>
+          <button type="button" id="garden-reset" disabled>清除筛选</button>
+        </div>
+        <p id="garden-empty" hidden>没有找到符合条件的笔记。可以换个关键词或清除筛选。</p>
+        <div class="garden-notes">
+          <details class="garden-note" data-note="math">
+            <summary>
+              <span class="garden-meta">数学 · 线性代数 · 示例</span>
+              <strong>矩阵与线性变换</strong>
+              <span>从几何视角理解矩阵的本质</span>
+              <span class="garden-arrow" aria-hidden="true"></span>
+            </summary>
+            <p>矩阵的每一列描述一个基向量变换后的去向。例如，把平面上的两个基向量分别拉伸到原长的两倍和三倍，单位正方形就会变成宽为 2、高为 3 的矩形。</p>
+          </details>
+          <details class="garden-note" data-note="cs">
+            <summary>
+              <span class="garden-meta">计算机 · C++ · 示例</span>
+              <strong>C++ 基础知识整理</strong>
+              <span>变量、函数与基础语法</span>
+              <span class="garden-arrow" aria-hidden="true"></span>
+            </summary>
+            <p>用 int 声明整数变量。把重复计算写成函数，例如 int square(int x) { return x * x; }，调用 square(3) 会得到 9。</p>
+          </details>
+          <details class="garden-note" data-note="ai">
+            <summary>
+              <span class="garden-meta">人工智能 · 深度学习 · 示例</span>
+              <strong>从神经网络到 Transformer</strong>
+              <span>建立对现代人工智能的初步认识</span>
+              <span class="garden-arrow" aria-hidden="true"></span>
+            </summary>
+            <p>神经网络通过多层变换提取特征。Transformer 使用自注意力，让每个词元根据上下文汇集其他词元的信息，例如借助句中其他词判断一个多义词的含义。</p>
+          </details>
+          <details class="garden-note" data-note="math">
+            <summary>
+              <span class="garden-meta">数学 · 高等数学 · 示例</span>
+              <strong>导数与微分的理解</strong>
+              <span>从变化率到局部线性近似</span>
+              <span class="garden-arrow" aria-hidden="true"></span>
+            </summary>
+            <p>导数描述函数的瞬时变化率。以 f(x) = x² 为例，在 x = 2 附近，输入变化 Δx 带来的输出变化约为 4Δx，误差是 (Δx)²。</p>
+          </details>
+          <details class="garden-note" data-note="eng">
+            <summary>
+              <span class="garden-meta">工程 · 工程实践 · 示例</span>
+              <strong>工程问题与数学建模</strong>
+              <span>如何将现实问题转化为数学问题</span>
+              <span class="garden-arrow" aria-hidden="true"></span>
+            </summary>
+            <p>以教室照明为例，可把灯具数量和布局作为变量，把最低照度作为约束，以降低耗电为目标，再用实际测量检查模型假设。</p>
+          </details>
+        </div>
+      </section>
+    </div>
+    <section id="entry-2" class="garden-review" aria-labelledby="garden-review-title" tabindex="-1">
+      <h2 id="garden-review-title">阶段复盘</h2>
+      <p>以下时间线仅为演示。</p>
+      <ol class="garden-timeline">
+        <li><time datetime="2026-11">NOV 2026</time><h3>探索新的学习方向</h3><p>尝试从一个小问题出发，比较不同学习方向各自需要哪些基础。</p></li>
+        <li><time datetime="2026-10">OCT 2026</time><h3>适应大学学习节奏</h3><p>在每周回顾中标出还没掌握的概念，并安排时间重做一道相关练习。</p></li>
+        <li><time datetime="2026-09">SEP 2026</time><h3>新的开始</h3><p>整理课程资料和学习目标，为每门课留出记录疑问的位置。</p></li>
+      </ol>
+    </section>
+    <p class="garden-signoff" lang="en">Knowledge takes time to grow.</p>
+  </main>
+  <footer class="shell footer"><a href="index.html">mypage</a><a href="#top">回到顶部</a></footer>
+</body>
+</html>
