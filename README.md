@@ -2,6 +2,10 @@
 
 一个以学习与创作为主题的静态个人网站。
 
+
+## 作者：我家猫
+
+
 ## 已完成
 
 - 首页三屏包括开场、关于我与兴趣地图、Bento 栏目导航。
@@ -20,9 +24,6 @@
 - `styles.css` — 共用样式
 - `navigation.js`、`home.js`、`hero-mark.js` — 首页导航和交互
 
-## 本地预览
-
-在项目目录运行 `python -m http.server 8000`，然后打开 `http://localhost:8000/`。无需构建步骤。
 
 ## GitHub Pages 部署
 
